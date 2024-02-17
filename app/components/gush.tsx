@@ -9,7 +9,7 @@ export function Gush() {
     <div className="w-screen h-screen">
       <Canvas>
         <fog attach="fog" color="#eee" near={1} far={10} />
-        <OrbitControls />
+        {/* <OrbitControls /> */}
         <ambientLight intensity={0.3} />
         <directionalLight color="white" position={[0, 10, 5]} />
         <PerspectiveCamera makeDefault position={[0, -0.5, 10]} />

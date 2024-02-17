@@ -26,3 +26,26 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  translate: calc(var(--x) * 1px - 50%) calc(var(--y) * 1px - 50%);
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.5;
+  scale: 0.2;
+  transition: scale 150ms ease-in-out, translate 200ms ease-out;
+  z-index: 999;
+  mix-blend-mode: difference;
+}
+
+:root:has(.cursor-scale:hover) .cursor {
+  background: aqua;
+  scale: 1;
+}
+

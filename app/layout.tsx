@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "./components/header";
+import { Cursor } from "./components/cursor";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,6 +19,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/bwo5nqc.css" />
       </head>
       <body>
+        <Cursor />
         <Header />
         {children}
       </body>

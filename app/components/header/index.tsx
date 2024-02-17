@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const linkClass =
-  "futura font-bold uppercase text-sm text-gray-800 hover:text-gray-900";
+  "futura font-bold uppercase text-sm text-gray-800 hover:text-gray-900 cursor-scale";
 
 export function Header() {
   return (

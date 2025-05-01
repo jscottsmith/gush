@@ -8,7 +8,9 @@ const linkClass =
 export function Header() {
   return (
     <header className="flex justify-between p-8 absolute top-0 left-0 right-0 z-50">
-      <Link href={routes.home}>G</Link>
+      <Link href={routes.home} className={linkClass}>
+        Gush
+      </Link>
       <nav>
         <ul className="flex gap-6">
           <li className={linkClass}>
@@ -22,7 +24,9 @@ export function Header() {
           </li>
         </ul>
       </nav>
-      <Link href={routes.home}>G</Link>
+      <Link href={routes.home} className={linkClass}>
+        Home
+      </Link>
     </header>
   );
 }

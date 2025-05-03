@@ -1,5 +1,6 @@
 import { routes } from "@/app/routes.constants";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 import Link from "next/link";
 import React from "react";
 
@@ -30,9 +31,7 @@ export function Header() {
           </li>
         </ul>
       </nav>
-      <Link href={routes.home} className={linkClass}>
-        Home
-      </Link>
+      <ThemeToggle />
     </header>
   );
 }

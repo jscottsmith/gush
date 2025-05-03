@@ -3,8 +3,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
 
-const linkClass =
-  "futura font-bold uppercase text-sm text-gray-800 hover:text-gray-900 cursor-scale";
+const linkClass = "cursor-scale";
 
 export function Header() {
   return (

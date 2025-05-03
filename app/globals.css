@@ -61,18 +61,17 @@ layer(utilities);
   translate: calc(var(--x) * 1px - 50%) calc(var(--y) * 1px - 50%);
   width: 100px;
   height: 100px;
-  background: red;
+  border: 8px solid var(--color-slate-50);
   border-radius: 50%;
   pointer-events: none;
-  opacity: 0.5;
   scale: 0.2;
-  transition: scale 150ms ease-in-out, translate 200ms ease-out;
+  transition: all 150ms ease-in-out, translate 100ms ease-out;
   z-index: 999;
   mix-blend-mode: difference;
 }
 
 :root:has(.cursor-scale:hover) .cursor {
-  background: aqua;
+  border: 2px solid var(--color-slate-50);
   scale: 1;
 }
 

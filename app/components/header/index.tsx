@@ -1,4 +1,5 @@
 import { routes } from "@/app/routes.constants";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
 
@@ -14,13 +15,19 @@ export function Header() {
       <nav>
         <ul className="flex gap-6">
           <li className={linkClass}>
-            <Link href={routes.services}>Services</Link>
+            <Button asChild variant="ghost">
+              <Link href={routes.services}>Services</Link>
+            </Button>
           </li>
           <li className={linkClass}>
-            <Link href={routes.about}>About</Link>
+            <Button asChild variant="ghost">
+              <Link href={routes.about}>About</Link>
+            </Button>
           </li>
           <li className={linkClass}>
-            <Link href={routes.contact}>Contact</Link>
+            <Button asChild variant="ghost">
+              <Link href={routes.contact}>Contact</Link>
+            </Button>
           </li>
         </ul>
       </nav>

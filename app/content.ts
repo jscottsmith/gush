@@ -9,6 +9,8 @@ export const content = {
     headline: "What we do",
     creative: {
       name: "Creative",
+      description:
+        "Branding, marketing, and product design services for your growing business.",
       items: [
         "Creative Direction",
         "Mobile and Web Design",
@@ -25,13 +27,15 @@ export const content = {
     },
     technology: {
       name: "Technology",
+      description:
+        "Engineering, development and technical solutions to power your business.",
       items: [
         "Modern Web Development",
         "Product Engineering",
         "Mobile and Web apps",
         "Frontend Architectures",
         "SEO Strategy and Consulting",
-        "Accessible Interfaces Standards",
+        "Accessible Interface Standards",
         "Design System Components",
         "Interactive Experiences",
         "2D and 3D Animation",

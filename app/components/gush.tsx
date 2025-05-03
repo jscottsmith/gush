@@ -6,7 +6,7 @@ import { GushText } from "./gush-text";
 
 export function Gush() {
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen h-[90svh]">
       <Canvas>
         <fog attach="fog" color="#eee" near={1} far={10} />
         {/* <OrbitControls /> */}

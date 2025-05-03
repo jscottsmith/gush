@@ -15,7 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      /* Required for next-themes: https://github.com/pacocoursey/next-themes */
+      suppressHydrationWarning
+    >
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/bwo5nqc.css" />
       </head>

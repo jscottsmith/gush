@@ -16,6 +16,7 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import { content } from "@/app/content";
+import { Placeholder } from "@/components/ui/placeholder";
 
 function ServiceLink(props: { label: string; description: string }) {
   return (
@@ -68,7 +69,7 @@ export function Header() {
                       </Link>
                     </NavigationMenuLink>
                   </div>
-                  <div className="flex w-[220px] uppercase text-sm justify-center text-secondary font-bold items-center p-sm bg-gradient-to-b rounded-sm from-slate-300 to-slate-700" />
+                  <Placeholder className="w-[220px] rounded-sm" />
                 </section>
               </NavigationMenuContent>
             </NavigationMenuItem>

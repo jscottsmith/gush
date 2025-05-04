@@ -6,17 +6,15 @@ import { GushText } from "./gush-text";
 
 export function Gush() {
   return (
-    <div className="w-screen h-[90svh]">
-      <Canvas>
-        <fog attach="fog" color="#eee" near={1} far={10} />
-        {/* <OrbitControls /> */}
-        <ambientLight intensity={0.3} />
-        <directionalLight color="white" position={[0, 10, 5]} />
-        <PerspectiveCamera makeDefault position={[0, -0.5, 10]} />
-        <Center>
-          <GushText />
-        </Center>
-      </Canvas>
-    </div>
+    <Canvas>
+      <fog attach="fog" color="#eee" near={1} far={10} />
+      {/* <OrbitControls /> */}
+      <ambientLight intensity={0.3} />
+      <directionalLight color="white" position={[0, 10, 5]} />
+      <PerspectiveCamera makeDefault position={[0, -0.5, 10]} />
+      <Center>
+        <GushText />
+      </Center>
+    </Canvas>
   );
 }

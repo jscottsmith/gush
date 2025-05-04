@@ -17,11 +17,9 @@ import {
 } from "@/components/ui/navigation-menu";
 import { content } from "@/app/content";
 
-const linkClass = "cursor-scale";
-
 function ServiceLink(props: { label: string; description: string }) {
   return (
-    <div className="flex gap-md items-center">
+    <div className="flex gap-md items-center cursor-scale">
       <div>
         <h2 className="text-lg">{props.label}</h2>
         <p className="text-sm mt-sm">{props.description}</p>
@@ -36,7 +34,10 @@ function ServiceLink(props: { label: string; description: string }) {
 export function Header() {
   return (
     <header className="flex justify-between p-8 absolute top-0 left-0 right-0 z-50">
-      <Link href={routes.home} className={linkClass}>
+      <Link
+        href={routes.home}
+        className="font-futura cursor-scale uppercase font-bold italic"
+      >
         Gush
       </Link>
 
@@ -44,7 +45,7 @@ export function Header() {
         <NavigationMenuList>
           <ul className="flex gap-6">
             {/* Services mega menu */}
-            <NavigationMenuItem className={linkClass}>
+            <NavigationMenuItem className="cursor-scale">
               <NavigationMenuTrigger>Services</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <section className="flex gap-md w-[360px]">

@@ -1,9 +1,8 @@
 export const content = {
   home: {
-    headline: "Squeezing juicy design from fresh technology",
-    subhead:
-      "We build expressive human experiences for digital products and brands",
-    copy: " GUSH was co-founded to merge the creative and engineering processes required to build digital experiences, products and brands. With over a decade of combined expertise in software development and design, GUSH partners aim to extend their industry tested expertise to service big and small clients alike.",
+    headline: "Juicy design squeezed from fresh tech",
+    subhead: "We build expressive experiences for digital products and brands",
+    copy: "GUSH was co-founded to merge the creative and engineering processes required to build digital experiences, products and brands. With over a decade of combined expertise in software development and design, GUSH partners aim to extend their industry tested expertise to service big and small clients alike.",
   },
   services: {
     headline: "What we do",
@@ -28,7 +27,7 @@ export const content = {
     technology: {
       name: "Technology",
       description:
-        "Engineering, development and technical solutions to power your business.",
+        "Engineering, development and software driven solutions to power your business.",
       items: [
         "Modern Web Development",
         "Product Engineering",

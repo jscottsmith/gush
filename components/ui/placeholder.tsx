@@ -6,7 +6,7 @@ export function Placeholder(props: PropsWithChildren<{ className?: string }>) {
     <div
       className={clsx(
         props.className,
-        "bg-gradient-to-b dark:from-slate-800 dark:to-slate-600 from-slate-400 to-slate-300"
+        "bg-gradient-to-b dark:from-zinc-800 dark:to-zinc-600 from-zinc-400 to-zinc-300"
       )}
     >
       {props.children}

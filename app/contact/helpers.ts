@@ -1,10 +1,12 @@
+import { content } from "../content";
+
 export function getWelcomeHeadline() {
   const hours = new Date().getHours();
   if (hours < 12) {
-    return `Hello, good morning`;
+    return content.contact.welcome.morning;
   }
   if (hours < 18) {
-    return `Hello, good afternoon`;
+    return content.contact.welcome.afternoon;
   }
-  return `Hello, good evening`;
+  return content.contact.welcome.evening;
 }

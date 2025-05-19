@@ -4,6 +4,7 @@ import { Hero } from "./components/hero";
 import { SiteWrapper } from "./components/site-wrapper";
 import { content } from "./content";
 import { Card } from "@/components/ui/card";
+import Contact from "./components/contact";
 
 export default function Home() {
   return (
@@ -45,6 +46,8 @@ export default function Home() {
           </SiteWrapper>
         </Placeholder>
       </section>
+
+      <Contact />
       {/* <h1 className="font-futura font-black uppercase text-[30vmin]">Gush</h1> */}
     </main>
   );
